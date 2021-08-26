@@ -1,0 +1,76 @@
+{
+    "id": "bundle--a625c45a-c49c-488c-a9c0-8ff9529ae1ad",
+    "objects": [
+        {
+            "created": "2020-10-22T11:42:37.424Z",
+            "id": "identity--8899d562-2667-4532-8e19-b4eca6c959bd",
+            "identity_class": "system",
+            "modified": "2020-10-22T11:42:37.424Z",
+            "name": "Atomic.exe",
+            "type": "identity"
+        },
+        {
+            "created": "2020-10-22T16:59:16.578Z",
+            "created_by_ref": "identity--8899d562-2667-4532-8e19-b4eca6c959bd",
+            "first_observed": "2020-10-22T16:59:16.578Z",
+            "id": "observed-data--626a6ca7-1145-4a66-b695-e1fe8090c319",
+            "last_observed": "2020-10-22T16:59:16.578Z",
+            "modified": "2020-10-22T16:59:16.578Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "hashes": {
+                        "SHA": "0e29a1f93b003c31af46ab1ab7c8d3df150123e0"
+                    },
+                    "name": "Atomic.exe",
+                    "type": "file"
+                },
+                "1": {
+                    "binary_ref": "0",
+                    "command_line": "C:\\File\\System\\Atomic.exe -k LocalServiceAndNoImpersonation -p -s SSDPSRV",
+                    "created": "2020-10-22T16:59:16.578Z",
+                    "creator_user_ref": "8",
+                    "name": "Atomic.exe",
+                    "opened_connection_refs": [
+                        "6"
+                    ],
+                    "parent_ref": "3",
+                    "pid": 7284,
+                    "type": "process"
+                },
+                "2": {
+                    "hashes": {
+                        "SHA": "dacd5b49ac628157fcb9cf8d6e537e851ef29a64"
+                    },
+                    "name": "cranberry.exe",
+                    "type": "file"
+                },
+                "3": {
+                    "binary_ref": "2",
+                    "name": "Nuclear.exe",
+                    "pid": 800,
+                    "type": "process"
+                },
+                "4": {
+                    "type": "ipv4-addr",
+                    "value": "104.168.98.206"
+                },
+                "5": {
+                    "dst_ref": "4",
+                    "src_ref": "6",
+                    "type": "network-traffic"
+                },
+                "6": {
+                    "type": "ipv4-addr",
+                    "value": "107.173.160.14"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "jburke"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}

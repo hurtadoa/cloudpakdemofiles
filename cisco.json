@@ -1,0 +1,26 @@
+{
+  "id": "observed-data--cf2c58dc-200e-49e0-b6f7-e19978675309",
+  "type": "observed-data",
+  "created_by_ref": "identity--3532c56d-ea72-48be-a2ad-1a53f4c9c6d8",
+  "objects": {
+    "0": {
+      "type": "network-traffic",
+      "src_port": 567,
+      "dst_port": 102,
+      "src_ref": "1",
+      "dst_ref": "2"
+    },
+    "1": {
+      "type": "ipv4-addr",
+      "value": "10.10.0.84"
+    },
+    "2": {
+      "type": "ipv4-addr",
+      "value": "127.0.0.1"
+    },
+    "3": {
+      "type": "url",
+      "value": "www.stealmydata.com"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+    "id": "bundle--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+    "objects": [
+        {
+            "created": "2020-10-28T20:41:19.844Z",
+            "created_by_ref": "identity--e207d0e4-041c-4d65-acdb-e0550a76ab1b",
+            "first_observed": "2020-10-28T19:46:09.444Z",
+            "id": "observed-data--f7ad2cf7-5101-4fae-8c5c-bd1c0ff91fcb",
+            "last_observed": "2020-10-28T19:46:09.444Z",
+            "modified": "2020-10-28T20:41:19.844Z",
+            "number_observed": 8,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.60.210",
+                    "resolves_to_refs": [
+                        "2"
+                    ]
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 28462,
+                    "dst_ref": "3",
+                    "dst_port": 443,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "2": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "91.218.114.11",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "user-account",
+                    "spec_version": "2.1",
+                    "id": "user-account--0d5b424b-93b8-5cd8-ac36-306e1789d63c",
+                    "user_id": "jparker",
+                    "account_login": "jparker",
+                    "account_type": "openid",
+                    "display_name": "Jason Parker",
+                    "is_service_account": false,
+                    "is_privileged": true,
+                    "can_escalate_privs": true,
+                    "account_created": "2020-01-20T12:31:12Z",
+                    "description": "Potentially Fraudulent Insurance Claim"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}
